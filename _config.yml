@@ -1,0 +1,15 @@
+permalink: :title
+
+highlighter: rouge
+markdown: kramdown
+
+title : Chautauqua Land Bank
+tagline: Data Dashboard
+
+production_url : labs.orbitist.com/cclb-dashboard
+
+baseurl : /cclb-dashboard
+
+timezone : America/New_York
+
+category: [map]
