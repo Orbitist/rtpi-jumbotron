@@ -3,13 +3,11 @@ permalink: :title
 highlighter: rouge
 markdown: kramdown
 
-title : Chautauqua Land Bank
-tagline: Data Dashboard
+title : RTPI Jumbotron
+tagline: Interactive Display
 
-production_url : labs.orbitist.com/cclb-dashboard
+production_url : labs.orbitist.com/rtpi-jumbotron
 
-baseurl : /cclb-dashboard
+baseurl : /rtpi-jumbotron
 
 timezone : America/New_York
-
-category: [map]

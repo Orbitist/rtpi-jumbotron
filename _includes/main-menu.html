@@ -1,15 +1,1 @@
-<ul class="nav nav-pills">
-	<li role="presentation" class="dropdown">
-		<a class="dropdown-toggle btn btn-default" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-			LEARN THE BASICS <span class="caret"></span>
-		</a>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.baseurl }}/">Introduction</a></li>
-		{% for post in site.posts reversed %}
-			{% if post.published %}
-				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-	</li>
-</ul>
+
