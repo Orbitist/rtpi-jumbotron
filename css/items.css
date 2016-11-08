@@ -1,0 +1,22 @@
+.grid {
+  max-width: 1200px;
+}
+
+.grid-item {
+  float: left;
+  width: 400px;
+}
+.grid-image {
+  max-width: 100%;
+  position: relative;
+}
+.grid-text {
+  padding: 10px;
+}
+.grid-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+.grid-description {
+  font-size: 8px;
+}
