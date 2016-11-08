@@ -33,10 +33,10 @@ function renderFeedItems() {
 
 renderFeedItems();
 
-
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
-  columnWidth: 200
+  columnWidth: 200,
+  gutter: 5
 });
 $grid.imagesLoaded().progress( function() {
   $grid.masonry('layout');

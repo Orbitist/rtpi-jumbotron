@@ -5,6 +5,9 @@
 .grid-item {
   float: left;
   width: 400px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 .grid-image {
   max-width: 100%;
