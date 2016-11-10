@@ -15,10 +15,8 @@ var contentFeed = (function () {
 function renderFeedItems() {
   for (var i = 0; i < contentFeed.length; i++) {
 
-    var videoEmbed = contentFeed[i].field_video_embed_code;
-    if (contentFeed[i].field_video_embed_code.length > 3) {
-      videoEmbed = JSON.parse(contentFeed[i].field_video_embed_code);
-    }
+    var videoEmbedJson = contentFeed[i].field_video_embed_code;
+    var videoEmbed = videoEmbedJson.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
 
     if (contentFeed[i].field_featured == 'true') {
       $('div.featured-grid').append('<p>' + contentFeed[i].title + '</p>');
