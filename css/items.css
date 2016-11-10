@@ -12,6 +12,11 @@
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+.grid-item-featured {
+  width: 600px;
+}
+
 .grid-image {
   max-width: 100%;
   position: relative;
@@ -26,5 +31,5 @@
   font-weight: bold;
 }
 .grid-description {
-  font-size: 10px;
+  font-size: 12px;
 }
