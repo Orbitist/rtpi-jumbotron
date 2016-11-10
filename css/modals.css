@@ -1,7 +1,12 @@
 .modal-body iframe {
   width: 100% !important;
-  height: 800px !important;
+  height: 900px !important;
 }
  .modal-lg {
-   width: 100%;
+   width: 1580px;
  }
+
+/* Fix width to make videos proportional */
+/* Remove unneeded lines */
+/* Whiten background */
+/* Make bigger close buttons */
