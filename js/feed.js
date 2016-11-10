@@ -19,6 +19,10 @@ function renderFeedItems() {
     var videoEmbedJson = contentFeed[i].field_video_embed_code;
     var videoEmbed = videoEmbedJson.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 
+    // Clean up map embed code by removing special characters
+    var mapEmbedJson = contentFeed[i].field_map_embed_code;
+    var mapEmbed = mapEmbedJson.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
+
     if (contentFeed[i].field_featured == 'true') {
       $('div.featured-grid').append('<p>' + contentFeed[i].title + '</p>');
     } else {
@@ -27,7 +31,7 @@ function renderFeedItems() {
           '<img class="grid-image" src="' + contentFeed[i].field_thumbnail + '" />' +
           '<div class="grid-text">' +
             '<div class="grid-title">' + contentFeed[i].title + '</div>' +
-            '<div class="grid-description"' + contentFeed[i].field_description + '</div>' +
+            '<div class="grid-description">' + contentFeed[i].field_description + '</div>' +
           '</div>' +
         '</div>' +
         '<div class="modal fade item' + contentFeed[i].nid + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">' +
@@ -40,7 +44,7 @@ function renderFeedItems() {
               '<div class="modal-body">' +
 
                 videoEmbed +
-
+                mapEmbed +
 
               '</div>' +
               '<div class="modal-footer">' +
