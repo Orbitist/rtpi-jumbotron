@@ -15,8 +15,9 @@ var contentFeed = (function () {
 function renderFeedItems() {
   for (var i = 0; i < contentFeed.length; i++) {
 
+    // Clean up video embed code by removing special characters
     var videoEmbedJson = contentFeed[i].field_video_embed_code;
-    var videoEmbed = videoEmbedJson.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+    var videoEmbed = videoEmbedJson.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
 
     if (contentFeed[i].field_featured == 'true') {
       $('div.featured-grid').append('<p>' + contentFeed[i].title + '</p>');
