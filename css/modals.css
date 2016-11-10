@@ -1,0 +1,7 @@
+.modal-body iframe {
+  width: 100% !important;
+  height: 800px !important;
+}
+ .modal-lg {
+   width: 100%;
+ }
