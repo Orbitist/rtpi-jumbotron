@@ -59,12 +59,3 @@ function renderFeedItems() {
 };
 
 renderFeedItems();
-
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  fitWidth: true,
-  gutter: 5
-});
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
