@@ -1,10 +1,8 @@
-.modal-body iframe {
-  width: 100% !important;
-  height: 860px !important;
-}
-
-.modal-body {
-  padding: 0;
+.modal-content {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2)
+  border: none;
+  border: 0px solid rgba(0, 0, 0, 0);
 }
 
 .modal-lg {
@@ -22,13 +20,16 @@
 .modal-header {
   border: none;
 }
+
+.modal-body {
+  padding: 0;
+}
+.modal-body iframe {
+  width: 100% !important;
+  height: 860px !important;
+}
+
 .modal-footer {
   border: none;
-}
-.modal-content {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .2)
-  border: none;
-  border: 0px solid rgba(0, 0, 0, 0);
 }
 /* Make bigger close buttons */
