@@ -15,7 +15,6 @@ var contentFeed = (function () {
 })();
 
 function renderFeedItems() {
-  $( ".grid" ).empty();
   for (var i = 0; i < contentFeed.length; i++) {
 
     // set grid-item vs grid-item-featured class

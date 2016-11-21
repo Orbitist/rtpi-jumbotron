@@ -22,8 +22,6 @@
 .grid-image {
   max-width: 100%;
   position: relative;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 .grid-text {
   padding: 10px;
@@ -37,12 +35,17 @@
 }
 
 .grid-cat-Art {
-
+  border-top-style: solid;
+  border-top-color: #7aadc4;
+  border-top-width: 8px;
 }
 .grid-cat-Education {
-
+  border-top-style: solid;
+  border-top-color: #df6340;
+  border-top-width: 8px;
 }
-
 .grid-cat-Conservation {
-
+  border-top-style: solid;
+  border-top-color: #9cbd86;
+  border-top-width: 8px;
 }
