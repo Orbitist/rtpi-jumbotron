@@ -1,20 +1,21 @@
 var contentAPI = 'http://rtpi.orbitist.com/api/jumbotron_item/basic';
 
 var contentFeed = (function () {
-    var contentFeed = null;
+    var contentData = null;
     $.ajax({
         'async': false,
         'global': false,
         'url': contentAPI,
         'dataType': "json",
         'success': function (data) {
-            contentFeed = data;
+            contentData = data;
         }
     });
-    return contentFeed;
+    return contentData;
 })();
 
 function renderFeedItems() {
+  $( ".grid" ).empty();
   for (var i = 0; i < contentFeed.length; i++) {
 
     // set grid-item vs grid-item-featured class
@@ -63,6 +64,14 @@ function renderFeedItems() {
     '</div><!-- modal fade item -->'
     );
   }
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    fitWidth: true,
+    gutter: 25
+  });
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
 };
 
 renderFeedItems();

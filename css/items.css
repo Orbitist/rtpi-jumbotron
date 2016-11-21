@@ -11,6 +11,8 @@
   -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: opacity 1s; /* Safari */
+  transition: opacity 1s;
 }
 
 .grid-item-featured {
@@ -32,4 +34,15 @@
 }
 .grid-description {
   font-size: 12px;
+}
+
+.grid-cat-Art {
+
+}
+.grid-cat-Education {
+
+}
+
+.grid-cat-Conservation {
+
 }
