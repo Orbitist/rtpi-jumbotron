@@ -1,0 +1,21 @@
+.key {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9;
+}
+
+.key .btn {
+  font-size: 20px;
+  text-align: left;
+}
+
+.btn-art {
+  background-color: #7aadc4;
+}
+.btn-education {
+  background-color: #df6340;
+}
+.btn-conservation {
+  background-color: #9cbd86;
+}

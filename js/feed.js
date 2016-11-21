@@ -1,9 +1,11 @@
+var contentAPI = 'http://rtpi.orbitist.com/api/jumbotron_item/basic';
+
 var contentFeed = (function () {
     var contentFeed = null;
     $.ajax({
         'async': false,
         'global': false,
-        'url': 'http://rtpi.orbitist.com/api/jumbotron_item/basic',
+        'url': contentAPI,
         'dataType': "json",
         'success': function (data) {
             contentFeed = data;
@@ -35,7 +37,7 @@ function renderFeedItems() {
 
     // Loop through the items and add them to the grid
     $('div.grid').append(
-      '<div class="' + gridItemClass + '" data-toggle="modal" data-target=".item' + contentFeed[i].nid + '">' +
+      '<div class="' + gridItemClass + ' grid-cat-' + contentFeed[i].field_jumbotron_item_category + '" data-toggle="modal" data-target=".item' + contentFeed[i].nid + '">' +
         '<img class="grid-image" src="' + contentFeed[i].field_thumbnail + '" />' +
         '<div class="grid-text">' +
           '<div class="grid-title">' + contentFeed[i].title + '</div>' +
