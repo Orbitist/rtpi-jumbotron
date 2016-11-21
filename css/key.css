@@ -7,15 +7,16 @@
 
 .key .btn {
   font-size: 14px;
+  font-weight: bold;
   text-align: left;
 }
 
 .btn-art {
-  background-color: #7aadc4;
+  color: #7aadc4;
 }
 .btn-education {
-  background-color: #df6340;
+  color: #df6340;
 }
 .btn-conservation {
-  background-color: #9cbd86;
+  color: #9cbd86;
 }
