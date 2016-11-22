@@ -14,15 +14,19 @@
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-.tileIcon {
-  font-size: 30px;
+i.tileIcon {
+  font-size: 12px;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 10px;
+  top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 40px;
 }
-.tileIcon .noThumb {
-  font-size: 30px;
+i.fa.tileIcon.noThumb {
   position: relative;
+  left: 10;
+  top: 10;
 }
 
 .grid-item-featured {

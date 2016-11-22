@@ -21,9 +21,9 @@ function renderFeedItems() {
     var tileIcon = '';
     // Maps
     if (contentFeed[i].field_jumbotron_item_type == "Map" && contentFeed[i].field_thumbnail.length > 2) {
-      tileIcon = '<i class="fa fa-map-marker tileIcon"></i>';
+      tileIcon = '<i class="fa fa-map-o tileIcon"></i>';
     } else if (contentFeed[i].field_jumbotron_item_type == "Map" && contentFeed[i].field_thumbnail.length < 2) {
-      tileIcon = '<i class="fa fa-map-marker tileIcon noThumb"></i>';
+      tileIcon = '<i class="fa fa-map-o tileIcon noThumb"></i>';
     }
     // Post
     if (contentFeed[i].field_jumbotron_item_type == "Post" && contentFeed[i].field_thumbnail.length > 2) {
