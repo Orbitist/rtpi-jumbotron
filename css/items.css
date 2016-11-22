@@ -14,6 +14,16 @@
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
+.tileIcon {
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.tileIcon .noThumb {
+  font-size: 30px;
+  position: relative;
+}
 
 .grid-item-featured {
   width: 625px;

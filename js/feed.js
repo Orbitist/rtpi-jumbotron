@@ -17,11 +17,44 @@ var contentFeed = (function () {
 function renderFeedItems() {
   for (var i = 0; i < contentFeed.length; i++) {
 
+    // prepare tileIcon
+    var tileIcon = '';
+    // Maps
+    if (contentFeed[i].field_jumbotron_item_type == "Map" && contentFeed[i].field_thumbnail.length > 2) {
+      tileIcon = '<i class="fa fa-map-marker tileIcon"></i>';
+    } else if (contentFeed[i].field_jumbotron_item_type == "Map" && contentFeed[i].field_thumbnail.length < 2) {
+      tileIcon = '<i class="fa fa-map-marker tileIcon noThumb"></i>';
+    }
+    // Post
+    if (contentFeed[i].field_jumbotron_item_type == "Post" && contentFeed[i].field_thumbnail.length > 2) {
+      tileIcon = '<i class="fa fa-file-text-o tileIcon"></i>';
+    } else if (contentFeed[i].field_jumbotron_item_type == "Post" && contentFeed[i].field_thumbnail.length < 2) {
+      tileIcon = '<i class="fa fa-file-text-o tileIcon noThumb"></i>';
+    }
+    // Imagery
+    if (contentFeed[i].field_jumbotron_item_type == "Imagery" && contentFeed[i].field_thumbnail.length > 2) {
+      tileIcon = '<i class="fa fa-picture-o tileIcon"></i>';
+    } else if (contentFeed[i].field_jumbotron_item_type == "Imagery" && contentFeed[i].field_thumbnail.length < 2) {
+      tileIcon = '<i class="fa fa-picture-o tileIcon noThumb"></i>';
+    }
+    // Video
+    if (contentFeed[i].field_jumbotron_item_type == "Video" && contentFeed[i].field_thumbnail.length > 2) {
+      tileIcon = '<i class="fa fa-video-camera tileIcon"></i>';
+    } else if (contentFeed[i].field_jumbotron_item_type == "Video" && contentFeed[i].field_thumbnail.length < 2) {
+      tileIcon = '<i class="fa fa-video-camera tileIcon noThumb"></i>';
+    }
+
     // set grid-item vs grid-item-featured class
     if (contentFeed[i].field_featured == 'True'){
       var gridItemClass = 'grid-item grid-item-featured';
     } else {
       var gridItemClass = 'grid-item';
+    }
+
+    // Prepare description when appropriate
+    var itemDescription = '';
+    if (contentFeed[i].field_jumbotron_item_type == "Post") {
+      itemDescription = contentFeed[i].field_full_description;
     }
 
     // Prepare photography
@@ -39,6 +72,7 @@ function renderFeedItems() {
     $('div.grid').append(
       '<div class="' + gridItemClass + ' grid-cat-' + contentFeed[i].field_jumbotron_item_category + '" data-toggle="modal" data-target=".item' + contentFeed[i].nid + '">' +
         '<img class="grid-image" src="' + contentFeed[i].field_thumbnail + '" />' +
+        tileIcon +
         '<div class="grid-text">' +
           '<div class="grid-title">' + contentFeed[i].title + '</div>' +
           '<div class="grid-description">' + contentFeed[i].field_description + '</div>' +
@@ -56,6 +90,7 @@ function renderFeedItems() {
               videoEmbed +
               mapEmbed +
               itemImages +
+              itemDescription +
 
           '</div><!-- modal-body -->' +
         '</div><!-- modal-content -->' +
