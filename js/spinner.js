@@ -4,5 +4,4 @@ function removeSpinner() {
   });
 };
 
-
 removeSpinner();
