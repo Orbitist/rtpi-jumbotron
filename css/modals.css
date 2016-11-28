@@ -14,7 +14,7 @@
 }
 .modal-backdrop.in {
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .modal-header {
@@ -60,3 +60,12 @@
   border: none;
 }
 /* Make bigger close buttons */
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s linear;
+     -moz-transition: opacity 0.8s linear;
+      -ms-transition: opacity 0.8s linear;
+       -o-transition: opacity 0.8s linear;
+          transition: opacity 0.8s linear;
+}
