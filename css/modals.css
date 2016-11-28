@@ -14,7 +14,7 @@
 }
 .modal-backdrop.in {
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .modal-header {
