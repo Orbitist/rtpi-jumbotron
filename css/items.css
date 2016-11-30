@@ -14,6 +14,10 @@
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
+.grid-item .fb-page {
+  height: 1520px;
+}
+
 i.tileIcon {
   font-size: 12px;
   position: absolute;
