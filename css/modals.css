@@ -59,13 +59,6 @@
   margin: 0 auto;
   max-width: 900px;
 }
-.modal-body iframe.tileLocation {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 200px !important;
-  height: 200px !important;
-}
 
 .modal-footer {
   border: none;
