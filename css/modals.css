@@ -47,7 +47,7 @@
   overflow-x: scroll;
 }
 .modal-body iframe {
-  width: 100% !important;
+  width: 1580px !important;
   height: 860px !important;
 }
 .modal-body p {
