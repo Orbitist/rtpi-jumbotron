@@ -74,6 +74,30 @@
       <button type="button" onclick="filterGrid('all');" class="btn btn-default"><i class="fa fa-refresh" aria-hidden="true"></i> All</button>
     </div>
   </div><!-- key -->
+
+  <!-- help button -->
+  <div class="help-button">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+      <i class="fa fa-question"></i> Help
+    </button>
+  </div><!-- help button -->
+
+    <!-- Help Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">How to use this display</h4>
+          </div>
+          <div class="modal-body">
+            <p>Use your hands to move up and down this page. Click on tiles to explore more information. This display will reset after 5 minutes of inactivity.</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- help modal -->
+
   <div class="grid"></div><!-- grid -->
 
   <!-- Custom JS -->

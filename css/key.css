@@ -5,7 +5,7 @@
   z-index: 9;
 }
 
-.key .btn {
+.key .btn, .help-button .btn {
   font-size: 14px;
   font-weight: bold;
   text-align: left;
@@ -19,4 +19,11 @@
 }
 .btn-conservation {
   color: #9cbd86;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9;
 }
