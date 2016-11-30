@@ -17,6 +17,12 @@
 .grid-item .fb-page {
   height: 1520px;
 }
+.grid-item iframe.tileLocation {
+  top: 10px;
+  left: 20px;
+  width: 100% !important;
+  height: 300px !important;
+}
 
 i.tileIcon {
   font-size: 12px;

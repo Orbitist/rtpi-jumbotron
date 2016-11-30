@@ -17,6 +17,16 @@ var contentFeed = (function () {
 function renderFeedItems() {
   for (var i = 0; i < contentFeed.length; i++) {
 
+    // prepare tileLocation
+    var tileLocation = '';
+    if (contentFeed[i].field_latitude.length > 2) {
+      tileLocation = '<iframe' +
+                      ' class="tileLocation"' +
+                      ' frameborder="0" style="border:0"' +
+                      ' src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCr6waAMtWgPqOMxkamjFjIwicvXLFmTb4&q=' + contentFeed[i].field_latitude + ',' + contentFeed[i].field_longitude + '&zoom=6&maptype=satellite" allowfullscreen>' +
+                      '</iframe>';
+    }
+
     // prepare tileIcon
     var tileIcon = '';
     // Maps
@@ -75,7 +85,7 @@ function renderFeedItems() {
         tileIcon +
         '<div class="grid-text">' +
           '<div class="grid-title">' + contentFeed[i].title + '</div>' +
-          '<div class="grid-description">' + contentFeed[i].field_description + '</div>' +
+          '<div class="grid-description">' + contentFeed[i].field_description + tileLocation + '</div>' +
         '</div><!-- grid-text -->' +
       '</div><!-- grid-item -->' +
       '<div class="modal fade item' + contentFeed[i].nid + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">' +
