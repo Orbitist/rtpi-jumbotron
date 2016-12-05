@@ -17,6 +17,15 @@ var contentFeed = (function () {
 function renderFeedItems() {
   for (var i = 0; i < contentFeed.length; i++) {
 
+    // prepare webPage
+    var webPage = '';
+    if (contentFeed[i].field_jumbotron_item_type == "Web Page") {
+      webPage = '<iframe' +
+                      ' frameborder="0" style="border:0"' +
+                      ' src="' + contentFeed[i].field_web_page + '" allowfullscreen>' +
+                      '</iframe>';
+    }
+
     // prepare tileLocation
     var tileLocation = '';
     if (contentFeed[i].field_latitude.length > 2) {
@@ -101,6 +110,7 @@ function renderFeedItems() {
               mapEmbed +
               itemImages +
               itemDescription +
+              webPage +
 
           '</div><!-- modal-body -->' +
         '</div><!-- modal-content -->' +
