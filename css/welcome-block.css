@@ -18,6 +18,9 @@
   max-width: 900px;
   margin: 10px auto;
   background-color: #eee;
-  border-radius: 3px;
+  border-radius: 300px;
   padding: 1px 10px 20px 10px;
+}
+.btn-grounds-map {
+  border-radius: 100px;
 }

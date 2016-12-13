@@ -84,29 +84,48 @@
     </button>
   </div><!-- help button -->
 
-    <!-- Help Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">How to use this display</h4>
-          </div>
-          <div class="modal-body">
-            <p>Use your hands to move up and down this page. Click on tiles to explore more information. This display will reset after 5 minutes of inactivity.</p>
-          </div>
+  <!-- Help Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">How to use this display</h4>
+        </div>
+        <div class="modal-body">
+          <p>Use your hands to move up and down this page. Click on tiles to explore more information. This display will reset after 5 minutes of inactivity.</p>
         </div>
       </div>
-    </div><!-- help modal -->
+    </div>
+  </div><!-- help modal -->
 
   <div class="welcome-block">
     <div class="welcome-block-top">
       <h3><small>Welcome to</small></br>The Roger Tory Peterson Institute of Natural History</h3>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success btn-xs btn-grounds-map" data-toggle="modal" data-target="#groundsMap">
+        <i class="fa fa-globe"></i> View Map of the grounds
+      </button>
     </div><!-- welcome-block-top -->
     <div class="welcome-block-bottom">
       <p class="lead"><a href="#grid" class="btn btn-success">EXPLORE MORE <i class="fa fa-angle-down"></i></a></p>
     </div><!-- welcome-block-bottom -->
   </div>
+
+  <!-- Grounds Map Modal -->
+  <div class="modal fade" id="groundsMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Explore the RTPI Grounds!</h4>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="500px" src="rtpi-grounds-map/index.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div><!-- grounds map modal -->
 
   <div class="grid" id="grid"></div><!-- grid -->
 
