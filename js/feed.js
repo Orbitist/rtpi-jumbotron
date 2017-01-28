@@ -1,4 +1,4 @@
-var contentAPI = 'http://rtpi.orbitist.com/api/jumbotron_item/basic';
+var contentAPI = 'http://orbitist.space/rtpi/api/jumbotron_item/basic';
 
 var contentFeed = (function () {
     var contentData = null;
