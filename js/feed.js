@@ -3,7 +3,7 @@ var contentAPI = 'https://orbitist.space/rtpi/api/jumbotron_item/basic';
 var contentFeed = (function () {
     var contentData = null;
     $.ajax({
-        'async': false,
+        'async': true,
         'global': false,
         'url': contentAPI,
         'dataType': "json",
