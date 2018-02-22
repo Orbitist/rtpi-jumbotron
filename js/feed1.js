@@ -15,7 +15,7 @@ var contentFeed = (function () {
 })();
 
 function renderFeedItems() {
-  for (var i = 0; i < contentFeed.length; i++) {
+  for (var i = 0; i < 25; i++) {
 
     // prepare webPage
     var webPage = '';
